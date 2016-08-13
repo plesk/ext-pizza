@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 1999-2016. Parallels IP Holdings GmbH. -->
 <module>
   <id>pizza</id>
-  <name>GET your pizza!</name>
-  <description>Order a delicious pizza directly from Plesk!</description>
+  <name>GET Your Pizza!</name>
+  <description>Set a link to order a delicious pizza directly from Plesk!</description>
   <version>1.0.0</version>
   <release>1</release>
   <vendor>Plesk</vendor>

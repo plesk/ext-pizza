@@ -3,4 +3,10 @@
 # Plesk Extension - Pizza
 Plesk Pizza - GET your pizza with one click!
 
-Order a delicious pizza directly from Plesk. :-)
+Let's get cheesy! :-)
+
+This extension adds a link to your favorite pizza delivery service directly to the main page "Websites &amp; Domains". You may specify your own pizza link in the settings.
+
+Be Plesky And Enjoy Your Pizza!
+
+Pizza icon by http://www.fatcow.com/free-icons
