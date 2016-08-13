@@ -9,4 +9,6 @@ This extension adds a link to your favorite pizza delivery service directly to t
 
 Be Plesky And Enjoy Your Pizza!
 
+![alt tag](https://raw.githubusercontent.com/plesk/ext-pizza/master/_meta/screenshots/screenshot-pizza-extension.png)
+
 Pizza icon by http://www.fatcow.com/free-icons
