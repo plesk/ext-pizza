@@ -5,6 +5,7 @@
 class IndexController extends pm_Controller_Action
 {
 	protected $_accessLevel = 'admin';
+	protected $_pizzalink = 'http://www.deliveryhero.com/';
 
 	public function init()
 	{
@@ -35,14 +36,10 @@ class IndexController extends pm_Controller_Action
 		{
 			if($form->getValue('pizzalink'))
 			{
-				$pizza_link = $form->getValue('pizzalink');
-			}
-			else
-			{
-				$pizza_link = 'http://www.deliveryhero.com/';
+				$this->_pizzalink = $form->getValue('pizzalink');
 			}
 
-			pm_Settings::set('pizzalink', $pizza_link);
+			pm_Settings::set('pizzalink', $this->_pizzalink);
 
 			$this->_status->addMessage('info', $this->lmsg('message_success'));
 			$this->_helper->json(['redirect' => pm_Context::getBaseUrl()]);
