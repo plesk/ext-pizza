@@ -27,7 +27,7 @@ class IndexController extends pm_Controller_Action
 
 		// Init form here
 		$form = new pm_Form_Simple();
-		$form->addElement('text', 'pizzalink', ['label' => $this->lmsg('form_pizzalink'), 'value' => pm_Settings::get('pizzalink')]);
+		$form->addElement('text', 'pizzalink', ['label' => $this->lmsg('form_pizzalink'), 'value' => pm_Settings::get('pizzalink'), 'style' => 'width: 40%;']);
 		$form->addControlButtons(['cancelLink' => pm_Context::getModulesListUrl(),]);
 
 		// Process the form - save the license key and run the installation scripts
@@ -35,8 +35,14 @@ class IndexController extends pm_Controller_Action
 		{
 			if($form->getValue('pizzalink'))
 			{
-				pm_Settings::set('pizzalink', $form->getValue('pizzalink'));
+				$pizza_link = $form->getValue('pizzalink');
 			}
+			else
+			{
+				$pizza_link = 'http://www.deliveryhero.com/';
+			}
+
+			pm_Settings::set('pizzalink', $pizza_link);
 
 			$this->_status->addMessage('info', $this->lmsg('message_success'));
 			$this->_helper->json(['redirect' => pm_Context::getBaseUrl()]);
